@@ -1,0 +1,35 @@
+#references {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    animation: move 1.5s forwards;
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+#references a {
+    color: chartreuse;
+}
+
+@keyframes move {
+    0%   {top: 0px; background: white; width: 0%; font-size: 0px; }
+    50%   { font-size: 0px; }
+    /*70%  {top: 0px; background: yellow; width: 80%; font-size: 0px;}*/
+    100% {top: 0px; background: black; width: 99%;}
+}
+
+#references .upside_span {
+    position: relative;
+    display: in;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main_frame {
+    color: rebeccapurple;
+    font-size: 30cm;
+}
+
+
