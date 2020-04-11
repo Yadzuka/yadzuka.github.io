@@ -2,11 +2,18 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    animation: openMenu 1.6s forwards;
+    text-align: center;
     background-color: black;
     padding: 8px;
     font-size: 18px;
     font-family: monospace;
+    animation: openMenu 1.6s forwards;
+
+    border-style: groove;
+    border-width: 0.1cm;
+    border-color: blue;
+
+    max-width: 99%;
 }
 
 #references a {
@@ -17,6 +24,10 @@
     0%   {top: 0px; background: rgb(49, 47, 47); width: 0%; font-size: 0px; }
     50% { top:0px; background: black; width: 99%; font-size: 0px;}
     100% {top: 0px; background: black; width: 99%;}
+}
+
+#bodya {
+
 }
 
 #references .upside_span {
