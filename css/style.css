@@ -2,7 +2,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    animation: move 1.5s forwards;
+    animation: move 1.6s forwards;
     background-color: black;
     padding: 10px;
     font-size: 20px;
@@ -15,7 +15,7 @@
 
 @keyframes move {
     0%   {top: 0px; background: white; width: 0%; font-size: 0px; }
-    50%   { font-size: 0px; }
+    50% { top:0px; background: black; width: 99%; font-size: 0px;}
     /*70%  {top: 0px; background: yellow; width: 80%; font-size: 0px;}*/
     100% {top: 0px; background: black; width: 99%;}
 }
@@ -29,7 +29,7 @@
 
 .main_frame {
     color: rebeccapurple;
-    font-size: 30cm;
+    font-size: 15cm;
 }
 
 
