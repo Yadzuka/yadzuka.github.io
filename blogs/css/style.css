@@ -1,8 +1,32 @@
 #examples_slider {
-    height: fit-content;
+    height: 500px;
     width: 20%;
     padding: 5px;
     margin: 5px;
+    overflow-y: hidden;
+    border: 1ch;
+    border-style: ridge;
 
     background-color: azure;
+}
+
+.example {
+    width: auto;
+    height: fit-content;
+    display: block;
+    position: relative;
+
+    padding: 5px;
+
+    font-size: large;
+    font-style: normal;
+    font-family: serif;
+    font-weight: 100;
+
+    border-bottom: 0.3ch;
+    border-style: outset;
+}
+
+#inspection_section {
+    
 }
