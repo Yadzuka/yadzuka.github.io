@@ -7,6 +7,8 @@ body {
     font-style: normal;
     text-rendering: optimizeLegibility;
     font-family: "-apple-system", BlinkMacSystemFont, Arial, sans-serif;
+    min-width: 100%;
+    position: fixed;
 }
 
 #references {
@@ -42,11 +44,9 @@ body {
 .layout {  
     position: relative;
     display: table;
-    min-width: 1024px;
     width: 100%;
     height: 100%;
     border-spacing: 0;
-    border-collapse: collapse;
     background: #fff;
 }
 .main_frame {
@@ -56,30 +56,41 @@ body {
     display: grid;
 }
 
-.main_frame #main_blocks {
+#main_blocks {
     background-color: rgb(6, 238, 45);
     width: 100%;
-    height: 100px;
-    max-height: inherit;
     height: auto;
+    display: inline-flex;
 }
 
 .story_blocks {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 33%;
+    height: 30%;
     margin: 10px;
     padding: 10px;
     background-color: black;
-    display: inline-block;
+    display: block;
+
+    font-size: 10px;
 
     animation: openStoryBlocks 1.6s forwards;
 }
 
+.story_blocks h2 {
+    color: chartreuse;
+    font-family: monospace;
+}
+
+.story_blocks p {
+    color: chartreuse;
+    font-family: monospace;
+}
+
 @keyframes openStoryBlocks {
     0%   {top: 0px; background: black; width: 0px; height: 1px; font-size: 0px; }
-    50% { top:0px; background: black; width: 100px; height: 1px; font-size: 0px;}
-    100% {top: 0px; background: black; width: 100px; }
+    50% { top:0px; background: black; width: 33%; height: 1px; font-size: 0px; }
+    100% {top: 0px; background: black; width: 33%; }
 }
 
 
