@@ -1,12 +1,40 @@
+#left_block {
+    width: fit-content;
+    max-width: 21%;
+}
+
+#center_block {
+    width: 39%;
+}
+
+#right_block {
+    width: 39%;
+}
+
+.blocks {
+    position: relative;
+    display: block;
+}
+
+#examples_upside{
+    padding: 5px;
+    margin: 5px;
+
+    font-size: large;
+    color: crimson;
+    font-weight: 100;
+}
+
 #examples_slider {
     height: 500px;
-    width: 20%;
+    width: inherit;
+
     padding: 5px;
     margin: 5px;
     overflow-y: hidden;
+
     border: 1ch;
     border-style: ridge;
-
     background-color: azure;
 }
 
@@ -27,6 +55,16 @@
     border-style: outset;
 }
 
-#inspection_section {
-    
+.inspection_section {
+    position: relative;
+
+    width: inherit;
+
+    padding: 5px;
+    padding-top: 30px;
+}
+
+.inspection_section .code_area {
+    width: auto;
+
 }
