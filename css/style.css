@@ -10,6 +10,8 @@ body {
     font-style: normal;
     font-family: "-apple-system", BlinkMacSystemFont, Arial, sans-serif;
     text-rendering: optimizeLegibility;
+
+    background: rgb(6, 238, 45);
 }
 
 #references {
@@ -49,7 +51,6 @@ body {
     width: 100%;
     height: 100%;
     border-spacing: 0;
-    background: white;
 }
 .main_frame {
     height: auto;
