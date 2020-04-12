@@ -1,32 +1,40 @@
 body {
+    position: fixed;
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    min-width: 100%;
     line-height: 1.5;
+    
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    text-rendering: optimizeLegibility;
     font-family: "-apple-system", BlinkMacSystemFont, Arial, sans-serif;
-    min-width: 100%;
-    position: fixed;
+    text-rendering: optimizeLegibility;
 }
 
 #references {
     position: sticky;
     top: 0px;
-    text-align: center;
-    background-color: black;
+    width: 100%;
     padding: 8px;
+    
+    background-color: black;
+
     font-size: 18px;
     font-family: monospace;
+    text-align: center;
+    
     animation: openMenu 1.6s forwards;
+}
 
-    width: 100%;
+@keyframes openMenu {
+    0%   {top: 0px; background: black; width: 0%; font-size: 0px; }
+    50% { top:0px; background: black; width: 100%; font-size: 0px;}
+    100% {top: 0px; background: black; width: 100%; }
 }
 
 #references a {
     color: chartreuse;
-
 }
 
 #references .upside_span {
@@ -35,19 +43,13 @@ body {
     padding-right: 30px;
 }
 
-@keyframes openMenu {
-    0%   {top: 0px; background: rgb(49, 47, 47); width: 0%; font-size: 0px; }
-    50% { top:0px; background: black; width: 100%; font-size: 0px;}
-    100% {top: 0px; background: black; width: 100%; }
-}
-
 .layout {  
     position: relative;
     display: table;
     width: 100%;
     height: 100%;
     border-spacing: 0;
-    background: #fff;
+    background: white;
 }
 .main_frame {
     height: auto;
@@ -59,32 +61,33 @@ body {
 #main_blocks {
     background-color: rgb(6, 238, 45);
     width: 100%;
-    height: auto;
+    height: max-content;
     display: inline-flex;
 }
 
 .story_blocks {
+    display: block;
     position: relative;
     width: 33%;
     height: 30%;
     margin: 10px;
     padding: 10px;
-    background-color: black;
-    display: block;
-
+    
     font-size: 13px;
+    font-family: monospace;
+    color: chartreuse;
+    background-color: black;
 
     animation: openStoryBlocks 1.6s forwards;
 }
 
-.story_blocks h2 {
+.story_blocks a {
     color: chartreuse;
-    font-family: monospace;
 }
 
-.story_blocks p {
-    color: chartreuse;
-    font-family: monospace;
+.story_blocks .blocks_caption {
+    text-align: center;
+
 }
 
 @keyframes openStoryBlocks {
