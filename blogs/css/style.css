@@ -13,7 +13,7 @@
 
 .blocks {
     position: relative;
-    display: block;
+    display: table;
 }
 
 #examples_upside{
