@@ -1,5 +1,7 @@
+setLoadSmallScreen();
 onExampleClick();
 scrollExamples();
+
 
 function onExampleClick() {
     var example = document.getElementsByClassName('example');
@@ -42,4 +44,18 @@ function scrollExamples() {
             console.log('hold');
         }
     });
+}
+
+function setLoadSmallScreen() {
+    let textfield = document.getElementsByClassName('code_area')[0];
+    let examples_slider = document.getElementById('examples_slider');
+
+    
+    console.log(examples_slider.height + ' ' + window.screen.height + ' ' + document.body.scrollHeight);
+    examples_slider.height = window.screen.availHeight;
+
+    if(window.screen.availWidth < 1024) {
+        textfield.rows = 50;
+        textfield.cols = 40;
+    } 
 }

@@ -1,5 +1,5 @@
 #left_block {
-    width: fit-content;
+    width: initial;
     max-width: 21%;
 }
 
@@ -15,7 +15,7 @@
 
 .blocks {
     position: relative;
-    display: block;
+    display: initial;
 }
 
 #examples_upside{
@@ -67,7 +67,7 @@
     width: inherit;
 
     padding: 5px;
-    padding-top: 30px;
+    padding-top: 91px;
 }
 
 .code_area {
