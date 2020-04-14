@@ -31,8 +31,6 @@
     height: 700px;
     width: inherit;
 
-    display: block;
-
     padding: 5px;
     margin: 5px;
     overflow-y: scroll;
@@ -58,6 +56,8 @@
     border-bottom: 0.3ch;
     border-style: outset;
 
+    overflow-x: overlay;
+
     cursor: grab;
 }
 
@@ -71,11 +71,10 @@
 }
 
 .code_area {
-    width: fit-content;
+    width: initial;
     height: inherit;
     resize: vertical;
 
-    font-size: normal;
     font-family: 'Courier New', Courier, monospace;
 
     border-radius: 5px;

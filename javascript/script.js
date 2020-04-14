@@ -41,7 +41,6 @@ function scrollExamples() {
 
     slider.addEventListener('mousedown', e => {
         if(hold) {
-            console.log('hold');
         }
     });
 }
@@ -51,7 +50,7 @@ function setLoadSmallScreen() {
     let examples_slider = document.getElementById('examples_slider');
 
     
-    console.log(examples_slider.height + ' ' + window.screen.height + ' ' + document.body.scrollHeight);
+    console.log(examples_slider.height + ' ' + window.screen.availWidth + ' ' );
     examples_slider.height = window.screen.availHeight;
 
     if(window.screen.availWidth < 1024) {
