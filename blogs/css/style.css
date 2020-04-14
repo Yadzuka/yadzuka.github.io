@@ -5,29 +5,33 @@
 
 #center_block {
     width: 39%;
+    max-width: 39%;
 }
 
 #right_block {
     width: 39%;
+    max-width: 39%;
 }
 
 .blocks {
     position: relative;
-    display: table;
+    display: block;
 }
 
 #examples_upside{
     padding: 5px;
     margin: 5px;
 
-    font-size: large;
-    color: crimson;
-    font-weight: 100;
+    font-size: x-large;
+    font-style: oblique;
+    color: rgb(0, 0, 0);
 }
 
 #examples_slider {
-    height: 500px;
+    height: 700px;
     width: inherit;
+
+    display: block;
 
     padding: 5px;
     margin: 5px;
@@ -53,10 +57,12 @@
 
     border-bottom: 0.3ch;
     border-style: outset;
+
+    cursor: grab;
 }
 
 .inspection_section {
-    position: relative;
+    position: fixed;
 
     width: inherit;
 
@@ -64,7 +70,21 @@
     padding-top: 30px;
 }
 
-.inspection_section .code_area {
-    width: auto;
+.code_area {
+    width: fit-content;
+    height: inherit;
+    resize: vertical;
 
+    font-size: normal;
+    font-family: 'Courier New', Courier, monospace;
+
+    border-radius: 5px;
+    border: 4px ridge rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px rgb(147, 147, 150);
+}
+
+#code_canvas {
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
 }

@@ -1,16 +1,20 @@
 onExampleClick();
+scrollExamples();
 
 function onExampleClick() {
-    let choosed = false;
-    var x = document.getElementsByClassName('example');
-    let number = [];
+    var example = document.getElementsByClassName('example');
+    var textfield = document.getElementsByClassName('code_area')[0];
 
-    for(i = 0; i < x.length; i++) {
-        number[i] = i;
-        console.log(number);
-        x[i].addEventListener('click', function(e) {
+    for(i = 0; i < example.length; i++) {
+        example[i].addEventListener('click', function(e) {
             this.style.borderStyle = 'inset';
-            resetExamples(this, x);
+            resetExamples(this, example);
+
+            textfield.innerText = this.innerText;
+        });
+
+        example[i].addEventListener('mousedown', function(e) {
+            this.style.cursor = 'grabbing';
         });
     }
 }
@@ -20,5 +24,22 @@ function resetExamples(exclude, elements) {
         if(elements[i] != exclude) {
             elements[i].style.borderStyle = 'outset';
         }
+        elements[i].style.cursor = 'grab';
     }
+}
+
+function scrollExamples() {
+    var slider = document.getElementById('examples_slider');
+    let hold = false;
+
+
+    slider.addEventListener('mousedown', e => {
+        hold = true;
+    });
+
+    slider.addEventListener('mousedown', e => {
+        if(hold) {
+            console.log('hold');
+        }
+    });
 }
