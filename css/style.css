@@ -5,8 +5,7 @@ body {
     min-width: 100%;
     line-height: 1.5;
     
-    font-size: 14px;
-    font-weight: 400;
+    font-size: initial;
     font-style: normal;
     font-family: "-apple-system", BlinkMacSystemFont, Arial, sans-serif;
     text-rendering: optimizeLegibility;
@@ -22,7 +21,7 @@ body {
     
     background-color: black;
 
-    font-size: 18px;
+    font-size: initial;
     font-family: monospace;
     text-align: center;
     
