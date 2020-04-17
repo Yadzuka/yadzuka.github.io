@@ -1,5 +1,5 @@
 .blocks {
-    display: block;
+    display: grid;
     position: relative;
     width: 33%;
     height: auto;
