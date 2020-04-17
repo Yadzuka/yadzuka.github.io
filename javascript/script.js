@@ -1,18 +1,18 @@
-setLoadSmallScreen();
+//setLoadSmallScreen();
 onExampleClick();
 scrollExamples();
 
 
 function onExampleClick() {
     var example = document.getElementsByClassName('example');
-    var textfield = document.getElementsByClassName('code_area')[0];
+    var textfield = document.getElementById('code_area');
 
     for(i = 0; i < example.length; i++) {
         example[i].addEventListener('click', function(e) {
             this.style.borderStyle = 'inset';
             resetExamples(this, example);
 
-            textfield.innerText = this.innerText;
+            textfield.value = this.innerText;
         });
 
         example[i].addEventListener('mousedown', function(e) {
@@ -45,16 +45,14 @@ function scrollExamples() {
     });
 }
 
-function setLoadSmallScreen() {
+/*function setLoadSmallScreen() {
     let textfield = document.getElementsByClassName('code_area')[0];
     let examples_slider = document.getElementById('examples_slider');
 
-    
-    console.log(examples_slider.height + ' ' + window.screen.availWidth + ' ' );
     examples_slider.height = window.screen.availHeight;
 
     if(window.screen.availWidth < 1024) {
         textfield.rows = 50;
         textfield.cols = 40;
     } 
-}
+}*/
