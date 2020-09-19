@@ -1,0 +1,177 @@
+/* Global styles */
+
+body {
+    margin: 0;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+    height: 100%;
+}
+
+/* First page */
+
+.welcome {
+    background-image: linear-gradient(to bottom, rgba(238,174,202,0.82) 0%, rgba(148,187,233,0.85) 100%), url("../img/start_page.jpg");
+    color: white;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.nav__menu {
+    background: #e5e5e5;
+
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 7px;
+
+    font-size: 36px;
+    font-style: normal;
+    color: indigo;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.upside__menu {
+    padding: 20px;
+}
+
+.upside__menu a{
+    margin-right: 20px;
+
+    font-size: 18px;
+    font-style: italic;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: color 0.3s linear;
+}
+
+.upside__menu a:hover {
+    color: hotpink;
+}
+
+/* About section */
+
+.about {
+
+}
+
+.about__header {
+
+}
+
+.about__text {
+
+}
+
+/* Projects section  */
+
+.projects {
+
+}
+
+.list__projects {
+    margin: 10px;
+    width: 30%;
+    float: right;
+    background: pink;
+    border: 3px solid hotpink;
+    padding: 3px;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+
+.list__projects a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+.list__projects__text {
+    padding: 5px 12px;
+}
+
+/* Footer */
+
+.footer {
+    background: #e5e5e5;
+}
+
+.sites {
+    width: 100%;
+    text-align: center;
+
+}
+
+.sites__link {
+
+    padding: 0;
+    font-size: 14px;
+    font-style: italic;
+    color: #919191;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    display: block;
+}
+
+.credentials__bottom {
+    padding: 0;
+    font-size: 12px;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    body {
+
+    }
+
+    /* Header */
+
+    .welcome {
+        background-image: linear-gradient(to bottom, rgba(238,174,202,0.82) 0%, rgba(148,187,233,0.85) 100%), url("../img/start_page.jpg");
+        color: white;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    .nav__menu {
+
+    }
+}
