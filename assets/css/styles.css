@@ -78,49 +78,6 @@ ul {
     color: hotpink;
 }
 
-/* About section */
-
-.about {
-
-}
-
-.about__header {
-
-}
-
-.about__text {
-
-}
-
-/* Projects section  */
-
-.projects {
-
-}
-
-.list__projects {
-    margin: 10px;
-    width: 30%;
-    float: right;
-    background: pink;
-    border: 3px solid hotpink;
-    padding: 3px;
-
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;
-}
-
-.list__projects a {
-    text-decoration: none;
-    color: deeppink;
-}
-
-.list__projects__text {
-    padding: 5px 12px;
-}
-
 /* Footer */
 
 .footer {
